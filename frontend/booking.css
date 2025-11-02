@@ -1,0 +1,724 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fefefe;
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    width: 95%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.nav {
+    width: 100%;
+    padding: 16px 0;
+    background-color: #363263;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.nav-menu {
+    z-index: 100000;
+}
+.nav-menu ul li {
+    margin-left: 5px;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #312d59;
+    background: #fefefe;
+}
+
+.nav-btn button {
+    border: none;
+    outline: none;
+    color: #fefefe;
+    background-color: #11101b;
+    padding: 16px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.nav-btn button i {
+    font-size: 1.5rem;
+}
+
+.icon {
+    font-size: 25px;
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-menu ul {
+        margin-left: 0;
+    }
+
+    .nav-menu ul li {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .nav-btn button {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-left: 50px;
+        background-color: #11101b;
+    }
+
+    .nav {
+        background-color: #11101b;
+        color: #fff;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #11101b;
+        color: #fefefe;
+        position: absolute;
+        top: 73px;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 50px 0 0 30px;
+        gap: 30px;
+        z-index: 1;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+
+    .nav-menu ul.showMenu {
+        transform: translateX(100%);
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .nav-btn button {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-left: 400px;
+        background-color: #605b9f;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+    .nav-menu ul li {
+        margin-right: 25px;
+        font-size: 16px;
+    }
+
+    .nav-btn button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+/* navbar section close */
+
+/* form styling */
+.containerr {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #fafafa;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 820px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+    background-color: #8a82ea;
+    position: relative;
+}
+
+.circle {
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 20%, #584ce4);
+    position: absolute;
+}
+
+.circle.one {
+    width: 130px;
+    height: 130px;
+    top: 130px;
+    right: -40px;
+}
+
+.circle.two {
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 30px;
+}
+
+.contact-form:before {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #6c63cd;
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+}
+
+form {
+    padding: 2.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+
+.title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+.input-container {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+    color: #fff;
+}
+
+
+.btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #938bed;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.input-container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #7c72e2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-container span:before {
+    left: 50%;
+}
+
+.input-container span:after {
+    right: 50%;
+}
+
+.input-container.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+    width: 50%;
+    opacity: 1;
+}
+
+.contact-info {
+    padding: 2.3rem 2.2rem;
+    position: relative;
+}
+
+.contact-info .title {
+    color: #756cde;
+}
+
+.text {
+    color: #333;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.icon {
+    width: 28px;
+    margin-right: 0.7rem;
+}
+
+.social-media {
+    padding: 2rem 0 0 0;
+}
+
+.social-media p {
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #aba5f0, #9088e8);
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.05);
+}
+
+.contact-info:before {
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    border: 22px solid #8a82e0;
+    border-radius: 50%;
+    bottom: -77px;
+    right: 50px;
+    opacity: 0.3;
+}
+
+.big-circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #3f3a74, #645db5);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-40%, 38%);
+}
+
+.big-circle:after {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
+}
+
+.square {
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(181%, 11%);
+    opacity: 0.2;
+}
+
+@media (max-width: 850px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info:before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+
+    .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+
+    .square {
+        transform: translate(140%, 43%);
+        height: 350px;
+    }
+
+    .big-circle {
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%;
+    }
+
+    .text {
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    .social-media {
+        padding: 1.5rem 0 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .contact-info:before {
+        display: none;
+    }
+
+    .square,
+    .big-circle {
+        display: none;
+    }
+
+    form,
+    .contact-info {
+        padding: 1.7rem 1.6rem;
+    }
+
+    .text,
+    .information,
+    .social-media p {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.15rem;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .icon {
+        width: 23px;
+    }
+
+    .input {
+        padding: 0.45rem 1.2rem;
+    }
+
+    .btn {
+        padding: 0.45rem 1.2rem;
+    }
+}
+
+/*.footer {
+    background-color: #363263;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}*/
+
+/* Booking Section */
+.booking .heading-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.booking .book-form{
+    padding: 2rem;
+    background: #eee;
+}
+
+.booking .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking .book-form .flex .inputbox{
+    flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputbox input{
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    color: #777;
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: 0.1rem solid #222;
+}
+
+.booking .book-form .flex .inputbox input:focus{
+    background: #222;
+    color: white;
+}
+
+.booking .book-form .flex .inputbox input:focus::placeholder{
+    background: #222;
+    color: #777;
+}
+
+.booking .book-form .flex .inputbox span{
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.booking .book-form .book-btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px 20px 10px 20px;
+}
+
+.booking .book-form .book-btn:hover{
+    background: #777;
+}
+
+/* footer */
+footer {
+    background-color: #363263;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Footer Responsive Styling */
+@media only screen and (max-width: 1320px) {
+    .footer-container {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .footer-container {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-section h3 {
+        font-size: 20px;
+    }
+
+    .footer-section h4 {
+        font-size: 16px;
+    }
+
+    .footer-section p,
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+}
+
+/* footer styling ends */

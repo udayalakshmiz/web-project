@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorld</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="container">
+                <div class="main-nav">
+                    <div class="logo">
+                        <h3>ExploreWorld</h3>
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="booking.html">Book</a></li>
+                            <li><a href="package.html">Destinations</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <i id="bar" class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="booking">
+        <h1 class="heading-title">Book Your Trip!</h1>
+        <form action="book_form.php" method="post" class="book-form">
+            <div class="flex">
+                <div class="inputbox">
+                    <span>Name: </span>
+                    <input type="text" placeholder="Enter your name" name="name">
+                </div>
+                <div class="inputbox">
+                    <span>E-mail: </span>
+                    <input type="text" placeholder="Enter your email" name="email">
+                </div>
+                <div class="inputbox">
+                    <span>Phone: </span>
+                    <input type="number" placeholder="Enter your phone number" name="phone">
+                </div>
+                <div class="inputbox">
+                    <span>Address: </span>
+                    <input type="text" placeholder="Enter your address" name="address">
+                </div>
+                <div class="inputbox">
+                    <span>Where to: </span>
+                    <input type="text" placeholder="Place you want to visit" name="location">
+                </div>
+                <div class="inputbox">
+                    <span>How many: </span>
+                    <input type="number" placeholder="Number of guests" name="guests">
+                </div>
+                <div class="inputbox">
+                    <span>Arrivals: </span>
+                    <input type="date" name="arrivals">
+                </div>
+                <div class="inputbox">
+                    <span>Leaving: </span>
+                    <input type="date" name="leaving">
+                </div>
+            </div>
+            <input type="submit" value="submit" class="book-btn" name="send">
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ExploreWorld</h3>
+                <p>Your gateway to unforgettable travel experiences. Discover the world with us!</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@exploreworld.com</p>
+                <p>Phone: 7569282535, 9347100456</p>
+                <p>Address: SRM University, AP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ExploreWorld. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="navscript.js"></script>
+    <script src="bookingscript.js"></script>
+
+</body>
+
+</html>

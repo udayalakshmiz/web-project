@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+          <div class="container">
+            <div class="main-nav">
+              <div class="logo">
+                <h3>ExploreWorld</h3>
+              </div>
+              <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Book</a></li>
+                    <li><a href="package.html">Destinations</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+              </div>
+              <div class="icon">
+                <i id="bar" class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+     </header>
+    <div class="login-body">
+    <div class="login-container">
+        <div class="form-box login">
+            <form action="login_form.php" method="post">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="username" name="uname" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" name="pword" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="forget-link">
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>or login with social platforms</p>
+                <div class="login-social-icons">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <form action="register_form.php" method="post">
+                <h1>Registration</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="username" name="username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" name="email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" name="password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p>or register with social platforms</p>
+                <div class="login-social-icons">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>ExploreWorld</h3>
+            <p>Your gateway to unforgettable travel experiences. Discover the world with us!</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book</a></li>
+                <li><a href="package.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: info@exploreworld.com</p>
+            <p>Phone: 7569282535, 9347100456</p>
+            <p>Address: SRM University, AP</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="footer-social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 ExploreWorld. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="loginscript.js"></script>
+    <script src="navscript.js"></script>
+</body>
+</html>
